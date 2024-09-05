@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario Registro</title>
+</head>
+<body id="body" class="estilo_uno">
+    <section class="caja" id="caja">
+        <form action="" id="form">
+            <h1>Datos Personales</h1>
+            <div class="controls">
+                <input type="text" placeholder="Ingrese su nombre" required>
+            </div>
+            <div class="controls">
+                <input type="text" placeholder="Ingrese su apellido" required>
+            </div>
+            <div class="controls">
+                <input type="email" id="email" placeholder="Ingrese su correo" required>
+            </div>
+            <div class="controls">
+                <input type="password" placeholder="Ingrese su contraseña" required>
+            </div>
+            <div class="controls">
+                <input type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" required>
+            </div>
+            <div class="controls">
+                <input type="country" placeholder="País de residencia" required>
+            </div>
+                <button type="submit" class="btn">Enviar</button>
+        </form>
+        <button type="submit" class="btn" id="estilo">Estilo 1</button>
+        <button type="submit" class="btn" id="contraste">Contraste</button>
+        <p class="warning" id="warning"></p>
+    </section>
+    <script src="formulario.js"></script>
+</body>
+</html>
