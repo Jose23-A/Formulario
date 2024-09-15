@@ -1,3 +1,5 @@
+const nombre = document.querySelector("#nombre");
+const apellido = document.querySelector("#apellido");
 const mail = document.getElementById("email");
 const form = document.getElementById("form");
 const parrafo = document.getElementById("warning");
@@ -12,9 +14,19 @@ form.addEventListener("submit", e=>{
     let warning="";
     let entrar = false
     parrafo.innerHTML= "";
+    let regexNombre = /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
+    let regexApellido = /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(!regexEmail.test(mail.value)){
         warning += "¡El email no es valido!";
+        entrar = true;
+    }
+    if(!regexNombre.test(nombre.value)){
+        warning += "¡El nombre no es valido!";
+        entrar = true;
+    }
+    if(!regexApellido.test(apellido.value)){
+        warning += "¡El apellido no es valido!";
         entrar = true;
     }
     if(entrar){

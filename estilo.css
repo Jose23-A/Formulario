@@ -46,6 +46,9 @@
 }
 .caja h1{
     text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .caja_dark h1{
     text-align: center;
@@ -114,13 +117,15 @@
 #estilo{
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: 10px;
     background: #fff;
-    width: 48%;
+    width: 40%;
     display: inline-block;
 }
 #contraste{
-    width: 48%;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 40%;
     display: inline-block;
     background-color: rgb(16, 16, 16);
     color: #fff;
